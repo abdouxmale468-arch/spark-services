@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Spark Services admin area - manage your servers through the Pterodactyl API.">
+    <title>Admin Area | Spark Services</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/dash.css">
+</head>
+<body>
+
+    <!-- ============ HEADER ============ -->
+    <header class="header" id="header">
+        <nav class="nav container" aria-label="Dashboard navigation">
+            <a href="index.html" class="logo" aria-label="Spark Services home">
+                <img src="assets/logo.jpg" alt="Spark Services logo" class="logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <span class="logo-text" style="display:none;">Spark <span class="logo-accent">Services</span></span>
+            </a>
+
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link" data-i18n="dash.back">Back to site</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <div class="lang-wrap">
+                    <button class="lang-toggle" id="lang-toggle" aria-label="Switch language" aria-expanded="false">
+                        <img src="assets/united.png" alt="English" class="lang-flag" id="lang-flag">
+                        <span id="lang-label">English</span>
+                        <svg class="lang-chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l4 4 4-4"/></svg>
+                    </button>
+                    <ul class="lang-menu" id="lang-menu">
+                        <li class="lang-option" data-lang="en"><img src="assets/united.png" alt="English" class="lang-flag"> English</li>
+                        <li class="lang-option" data-lang="ar"><img src="assets/saudi.png" alt="العربية" class="lang-flag"> العربية</li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="dash-main">
+        <!-- Dashboard content -->
+    </main>
+
+    <script src="js/dash.js"></script>
+</body>
+</html>
